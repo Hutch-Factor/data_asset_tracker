@@ -64,3 +64,4 @@ with st.form("new_asset_form"):
         }
         save_assets(pd.DataFrame([new_row]))
         st.success("Asset added successfully! Please refresh to see the update.")
+        st.caption("Clinical Simulation Asset Tracker - Created by Ray Hutchinson")
