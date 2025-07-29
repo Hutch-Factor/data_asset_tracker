@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 def load_assets(path="data_assets.csv"):
-    df = pd.read_csv(path)
-    df.columns = df.columns.str.strip() #removes extra spaces from headers
-    return df
 
 def save_assets(new_asset, path="data_assets.csv"):
     df = load_assets(path)
