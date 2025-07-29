@@ -28,7 +28,7 @@ st.write("CSV Column Names:", assets_df.columns.tolist())
 #location_filter = st. sidebar.multiselect("Location", options=assets_df["Location"].unique(), default=assets_df["Location"].unique())
 
 #Filtered Data
-filtered_df = assets_df[(assets_df["Status"].isin(status_filter)) & (assets_df["Location"].isin(location_filter))]
+#filtered_df = assets_df[(assets_df["Status"].isin(status_filter)) & (assets_df["Location"].isin(location_filter))]
 
 #Display Summary Stats
 st.subheader("📊 Summary Statistics")
