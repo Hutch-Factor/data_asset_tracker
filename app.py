@@ -30,6 +30,8 @@ col3.metric("Expired Warranty", (pd.to_datetime(assets_df["warranty_expiry"]) < 
 st.subheader("📋 Asset Inventory")
 st.dataframe(filtered_df, use_container_width=True)
 
+st.divider()
+
 #Add New Asset
 st.subheader("➕ Add New Asset")
 with st.form("new_asset_form"):
