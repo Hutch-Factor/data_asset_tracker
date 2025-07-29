@@ -1,4 +1,4 @@
-﻿asset_id,asset_name,asset_category,serial_number,location,status,acquisition_date,vendor,warranty_expiry
+﻿asset_id,asset_name,asset_category,serial_number,location,status_update,acquisition_date,vendor,warranty_expiry
 A001,SimMan 3G,Manikin,SM3G-02123,Room 101,Active,2022-01-10,Laerdal,2025-01-10
 A002,Monitor V600,Monitor,MV600-9947,Room 202,In Repair,2021-07-15,Philips,2024-07-15
 A003,Defibrillator X-Series,Defibrillator,DX-98127,Simulation Storage,Active,2023-05-22,Zoll,2023-05-22
