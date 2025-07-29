@@ -34,7 +34,7 @@ st.write("CSV Column Names:", assets_df.columns.tolist())
 st.subheader("📊 Summary Statistics")
 col1, col2, col3 = st.columns(3)
 col1.metric("Total Assets", len(assets_df))
-#col2.metric("In Repair", (assets_df["Status"] == "In Repair").sum())
+col2.metric("In Repair", (assets_df["status"] == "In Repair").sum())
 col3.metric("Expired Warranty", (pd.to_datetime(assets_df["Warranty Expiry"]) < pd.to_datetime(date.today())).sum())
 
 #Asset Table
