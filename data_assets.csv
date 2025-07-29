@@ -1,13 +1,13 @@
-﻿asset_id,asset_name,asset_category,serial_number,location,status,acquisition_date,vendor,warranty_expiry,,,
-A001,SimMan 3G,Manikin,SM3G-02123,Room 101,Active,2022-01-10,Laerdal,2025-01-10,,,
-A002,Monitor V600,Monitor,MV600-9947,Room 202,In Repair,2021-07-15,Philips,2024-07-15,,,
-A003,Defibrillator X-Series,Defibrillator,DX-98127,Simulation Storage,Active,2023-05-22,Zoll,2023-05-22,,,
-A004,SimBaby - Advanced,Manikin,SBAV-03455,Pediatric Sim Room,Active,2023-03-18,Laerdal,2026-03-18,,,
-A005,Training Laptop - HP G5,Laptop,HPG5-1134,Control Room,Active,2021-11-30,HP,2024-11-30,,,
-A006,Airway Task Trainer ,Trainer,ATT-2291,Storage Shelf,Decommissioned,2018-01-15,3B Scientific,2022-08-14,,,
-A007,Monitor,Monitor V500 ,MV500-8473,Room,Active,2022-10-03,Philips,2025-10-03,,,
-A008,Infant  Manikin Premiere HAL,Manikin,HAL-9901,Infant Lab,Active,2024-02-01,Gaumard,2027-02-01,,,
-A009,Adult Ventilator Trainer,Trainer,AVT-4128,Room 204,In Repair,2020-12-11,IngMar Medical,2023-12-11,,,
-A010,Defibrillator AED Pro,Defibrillator,AEDP-3017,Room 103,Active,2023-06-06,Zoll,2026-06-06,,,
-A011,SimMom ,Manikin,SMOB-5478,Room 102,Active,2021-05-25,Laerdal,2024-12-19,,,
-A012,Prestan CPR Manikin,Manikin,PRCPR-0425,Room103,In Repair,2020-04-11,Prestan Products,2023-04-11,,,
+﻿asset_id,asset_name,asset_category,serial_number,location,status,acquisition_date,vendor,warranty_expiry
+A001,SimMan 3G,Manikin,SM3G-02123,Room 101,Active,2022-01-10,Laerdal,2025-01-10
+A002,Monitor V600,Monitor,MV600-9947,Room 202,In Repair,2021-07-15,Philips,2024-07-15
+A003,Defibrillator X-Series,Defibrillator,DX-98127,Simulation Storage,Active,2023-05-22,Zoll,2023-05-22
+A004,SimBaby - Advanced,Manikin,SBAV-03455,Pediatric Sim Room,Active,2023-03-18,Laerdal,2026-03-18
+A005,Training Laptop - HP G5,Laptop,HPG5-1134,Control Room,Active,2021-11-30,HP,2024-11-30
+A006,Airway Task Trainer ,Trainer,ATT-2291,Storage Shelf,Decommissioned,2018-01-15,3B Scientific,2022-08-14
+A007,Monitor,Monitor V500 ,MV500-8473,Room,Active,2022-10-03,Philips,2025-10-03
+A008,Infant  Manikin Premiere HAL,Manikin,HAL-9901,Infant Lab,Active,2024-02-01,Gaumard,2027-02-01
+A009,Adult Ventilator Trainer,Trainer,AVT-4128,Room 204,In Repair,2020-12-11,IngMar Medical,2023-12-11
+A010,Defibrillator AED Pro,Defibrillator,AEDP-3017,Room 103,Active,2023-06-06,Zoll,2026-06-06
+A011,SimMom ,Manikin,SMOB-5478,Room 102,Active,2021-05-25,Laerdal,2024-12-19
+A012,Prestan CPR Manikin,Manikin,PRCPR-0425,Room103,In Repair,2020-04-11,Prestan Products,2023-04-11
