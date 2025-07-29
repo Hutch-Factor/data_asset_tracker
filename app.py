@@ -1,5 +1,15 @@
 import streamlit as st
 import pandas as pd
+def load_assets(path="data_assets.csv):
+    df = pd.read_csv(path)
+    df.columns = df.columns.str.strip() #removes extra spaces from headers
+    return df
+
+def save_assets(new_asset, path="data_assets.csv"):
+    df = load_assets(path)
+    df = pd.concat([df, new_asset], ignore_index=True)
+    df.to_csv(path, index=False)
+    
 from helpers_utils import load_assets, save_assets
 from datetime import date
 
@@ -44,7 +54,6 @@ with st.form("new_asset_form"):
     with col2:
         status = st.selectbox("Status", ["Active", "Operational", "In Repair", "Decommissioned"])
         acquisition_date = st.date_input("Acquisition Date")
-        location = st.text_input("Location")
         vendor = st.text_input("Vendor")
         warranty_expiry = st.date_input("Warranty Expiry")
     
@@ -52,7 +61,7 @@ with st.form("new_asset_form"):
     if submit:
         new_row = {
             "Asset ID": asset_id,
-            "Name": name,
+            "Asset Name": name,
             "Category": category,
             "Serial Number": serial,
             "Location": location,
