@@ -12,9 +12,9 @@ st.title("🖥️ Digital Asset Tracking System")
 assets_df = load_assets(path="data_assets.csv")
 
 #Sidebar Filters
-st.sidebar.header("🔍 Filter Assets")
-status_filter = st.sidebar.multiselect("status_update", options=assets_df["status_update"].unique(), default=assets_df["status_update"].unique())
-location_filter = st. sidebar.multiselect("asset_location", options=assets_df["asset_location"].unique(), default=assets_df["asset_location"].unique())
+st.sidebar.header("🔍 Filter Assets by:")
+status_filter = st.sidebar.multiselect("Status", options=assets_df["status_update"].unique(), default=assets_df["status_update"].unique())
+location_filter = st. sidebar.multiselect("Location", options=assets_df["asset_location"].unique(), default=assets_df["asset_location"].unique())
 
 #Filtered Data
 filtered_df = assets_df[(assets_df["status_update"].isin(status_filter)) & (assets_df["asset_location"].isin(location_filter))]
