@@ -25,7 +25,7 @@ st.write("CSV Column Names:", assets_df.columns.tolist())
 #Sidebar Filters
 st.sidebar.header("🔍 Filter Assets")
 status_filter = st.sidebar.multiselect("status_update", options=assets_df["status_update"].unique(), default=assets_df["status_update"].unique())
-location_filter = st. sidebar.multiselect("Location", options=assets_df["Location"].unique(), default=assets_df["Location"].unique())
+location_filter = st. sidebar.multiselect("location", options=assets_df["location"].unique(), default=assets_df["Location"].unique())
 
 #Filtered Data
 #filtered_df = assets_df[(assets_df["status_update"].isin(status_filter)) & (assets_df["Location"].isin(location_filter))]
