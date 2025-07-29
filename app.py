@@ -20,6 +20,7 @@ st.title("🖥️ Digital Asset Tracking System")
 
 #Load Data
 assets_df = load_assets(path="data_assets.csv")
+st.write("CSV Column Names:", assets_df.columns.tolist())
 
 #Sidebar Filters
 st.sidebar.header("🔍 Filter Assets")
