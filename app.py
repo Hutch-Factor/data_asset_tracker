@@ -1,7 +1,5 @@
 import streamlit as st
-import pandas as pd
-
-    
+import pandas as pd   
 from helpers_utils import load_assets, save_assets
 from datetime import date
 
@@ -12,7 +10,6 @@ st.title("🖥️ Digital Asset Tracking System")
 
 #Load Data
 assets_df = load_assets(path="data_assets.csv")
-st.write("CSV Column Names:", assets_df.columns.tolist())
 
 #Sidebar Filters
 st.sidebar.header("🔍 Filter Assets")
