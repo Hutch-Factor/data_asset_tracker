@@ -1,7 +1,9 @@
 import pandas as pd
 
 def load_assets(path="data_assets.csv"):
-    return pd.read_csv(path)
+    df = pd.read_csv(path)
+    df.columns = df.columns.str.strip() #Removes spaces around column names
+    return df
 
 def save_assets(new_asset, path="data_assets.csv"):
     df = load_assets(path)
