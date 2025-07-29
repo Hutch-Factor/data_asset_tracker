@@ -9,7 +9,7 @@ st.set_page_config(page_title="Digital Asset Tracker", layout="wide")
 st.title("🖥️ Digital Asset Tracking System")
 
 #Load Data
-assets_df = load_assets()
+assets_df = load_assets(path="data_assets.csv")
 
 #Sidebar Filters
 st.sidebar.header("🔍 Filter Assets")
