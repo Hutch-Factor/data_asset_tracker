@@ -28,7 +28,7 @@ status_filter = st.sidebar.multiselect("status_update", options=assets_df["statu
 location_filter = st. sidebar.multiselect("asset_location", options=assets_df["asset_location"].unique(), default=assets_df["asset_location"].unique())
 
 #Filtered Data
-#filtered_df = assets_df[(assets_df["status_update"].isin(status_filter)) & (assets_df["Location"].isin(location_filter))]
+filtered_df = assets_df[(assets_df["status_update"].isin(status_filter)) & (assets_df["Location"].isin(location_filter))]
 
 #Display Summary Stats
 st.subheader("📊 Summary Statistics")
