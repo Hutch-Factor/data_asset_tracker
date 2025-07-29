@@ -1,11 +1,12 @@
 import streamlit as st
 import pandas as pd
+
 def load_assets(path="data_assets.csv"):
 
-    def save_assets(new_asset, path="data_assets.csv"):
-        df = load_assets(path)
-        df = pd.concat([df, new_asset], ignore_index=True)
-        df.to_csv(path, index=False)
+def save_assets(new_asset, path="data_assets.csv"):
+    df = load_assets(path)
+    df = pd.concat([df, new_asset], ignore_index=True)
+    df.to_csv(path, index=False)
     
 from helpers_utils import load_assets, save_assets
 from datetime import date
