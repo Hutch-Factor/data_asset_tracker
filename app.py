@@ -25,7 +25,7 @@ st.write("CSV Column Names:", assets_df.columns.tolist())
 #Sidebar Filters
 st.sidebar.header("🔍 Filter Assets")
 status_filter = st.sidebar.multiselect("status_update", options=assets_df["status_update"].unique(), default=assets_df["status_update"].unique())
-location_filter = st. sidebar.multiselect("location", options=assets_df["location"].unique(), default=assets_df["Location"].unique())
+location_filter = st. sidebar.multiselect("asset_location", options=assets_df["asset_location"].unique(), default=assets_df["asset_location"].unique())
 
 #Filtered Data
 #filtered_df = assets_df[(assets_df["status_update"].isin(status_filter)) & (assets_df["Location"].isin(location_filter))]
@@ -55,20 +55,20 @@ with st.form("new_asset_form"):
     with col2:
         status_update = st.selectbox("status_update", ["Active", "In Repair", "Decommissioned"])
         acquisition_date = st.date_input("Acquisition Date")
-        vendor = st.text_input("Vendor")
+        asset_vendor = st.text_input("Asset Vendor")
         warranty_expiry = st.date_input("Warranty Expiry")
     
     submit = st.form_submit_button("Add Asset")
     if submit:
         new_row = {
             "Asset ID": asset_id,
-            "Asset Name": name,
-            "Category": category,
-            "Serial Number": serial,
-            "Location": location,
+            "Asset Name": asset_name,
+            "Category": asset_category,
+            "Serial Number": asset_serial,
+            "Location": asset_location,
             "Status Update": status_update,
             "Acquisition Date": acquisition_date,
-            "Vendor": vendor,
+            "Vendor": asset_vendor,
             "Warranty Expiry": warranty_expiry
         }
         save_assets(pd.DataFrame([new_row]))
