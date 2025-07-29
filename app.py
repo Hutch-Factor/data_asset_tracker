@@ -35,7 +35,7 @@ st.subheader("📊 Summary Statistics")
 col1, col2, col3 = st.columns(3)
 col1.metric("Total Assets", len(assets_df))
 col2.metric("In Repair", (assets_df["status_update"] == "In Repair").sum())
-col3.metric("Expired Warranty", (pd.to_datetime(assets_df["Warranty Expiry"]) < pd.to_datetime(date.today())).sum())
+col3.metric("Expired Warranty", (pd.to_datetime(assets_df["warranty_expiry"]) < pd.to_datetime(date.today())).sum())
 
 #Asset Table
 st.subheader("📋 Asset Inventory")
